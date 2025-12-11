@@ -1,0 +1,47 @@
+1  sudo apt update
+    2  sudo apt install apache2 php libapache2-mod-php php-mysql -y
+    3  sudo systemctl enable apache2
+    4  sudo systemctl start apache2
+    5  cd /var/www/html
+    6  sudo nano index.php
+    7  ls /var/www/html
+    8  sudo mv ~/index.php /var/www/html/
+    9  php -v
+   10  cd /var/www/html
+   11  sudo rm index.html
+   12  sudo systemctl restart apache2
+   13  sudo apt install mysql-client -y
+   14  mysql -h database-1.c7uce8yog8c7.eu-north-1.rds.amazonaws.com -u admin -p
+   15  cd /var/www/html
+   16  ls 
+   17  mysql -h database-1.c7uce8yog8c7.eu-north-1.rds.amazonaws.com -u admin -p
+   18  admin1234
+   19  mysql -h database-1.c7uce8yog8c7.eu-north-1.rds.amazonaws.com -u admin -p
+   20  cd /var/www/html
+   21  ls
+   22  mysql -h database-1.c7uce8yog8c7.eu-north-1.rds.amazonaws.com -u admin -p
+   23  cd /var/www/html
+   24  ls
+   25  mysql -h database-1.c7uce8yog8c7.eu-north-1.rds.amazonaws.com -u admin -p
+   26  cd /var/www/html
+   27  sudo nano submit.php
+   28  cat /var/www/html/index.php
+   29  [200~ls /var/www/html
+   30  ls /var/www/html
+   31  cat /var/www/html/index.php | grep form
+   32  sudo nano /var/www/html/test.php
+   33  mysql -h database-1.c7uce8yog8c7.eu-north-1.rds.amazonaws.com -u admin -p
+   34  history
+   35  cd /var/www/html
+   36  git init
+   37  sudo chown -R ubuntu:ubuntu /var/www/html
+   38  cd /var/www/html
+   39  git init
+   40  git add .
+   41  git commit -m "AWS EC2 + PHP + RDS Project"
+   42  git branch -M main
+   43  git remote add origin https://github.com/<your-username>/aws-php-rds-form.git
+   44  git push -u origin main
+   45  git remote add origin https://github.com/yarinaelowyn3/aws-php-rds-form.git
+   46  git branch -M main
+   47  git push -u origin main
